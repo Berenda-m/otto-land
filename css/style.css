@@ -1,0 +1,53 @@
+*,
+* ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    background: url("../img/capa.jpg.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 225, 231);
+    text-align: center;
+    font-weight: 700;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.galeria figure {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.galeria figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s, opacity .3s;
+}
+
+.galeria figure:hover img {
+    transform: scale(1.06);
+    opacity: .82;
+}
+body {
+    text-align: center;
+    background-color: ;
+}
