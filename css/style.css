@@ -1,3 +1,4 @@
+/*Configuração padrão*/
 *,
 *::before,
 *::after {
@@ -5,13 +6,14 @@
     margin: 0;
     padding: 0;
 }
+/*imagem perfil*/
 img {
     object-fit: cover;
     border: 2px solid #f0c808;
     border-radius: 60%;
     object-position: center 40%;
 }
-
+/* Conteúdo do topo*/
 .hero {
     background: url("../img/capa.jpg");
     background-size: cover;
@@ -51,6 +53,8 @@ header {
 nav {
     padding-bottom: 15px;
     text-decoration: none;
+    background-color: #cc2724e3;
+
 }
 
 nav a {
@@ -66,6 +70,11 @@ h1 {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: #F0C808;
+    background-color: #cc2724e3;
+}
+h3 {
+    font-size: 12px;
+    padding: 5px;
 }
 
 .subtitulo {
@@ -76,6 +85,8 @@ h1 {
     text-shadow: 2px 2px 4px rgb(230, 228, 228);
     background: linear-gradient(0, 0, 0, 0.5) rgba(255, 254, 254, 0);
     font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(48, 47, 47, 0.74);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
 }
 
 .button {
@@ -98,9 +109,18 @@ h1 {
 }
 
 footer {
-    background-color: #A0CED9;
-    margin-top: 20px;
+    background-color: #cc2724e3;
+    margin-top: 40px;
     color: #F0C808;
+    text-shadow: 1px 1px 2px rgb(3, 3, 3);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+}
+footer a{
+    text-decoration: none;
+    color: #F0C808;
+    text-shadow: 1px 1px 2px rgb(3, 3, 3);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+    font-size: 16px;
 }
 
 p {
@@ -111,6 +131,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
+/* imagens da galeria*/
 .item {
     background-color: #f6f3ed;
     border-radius: 30px;
@@ -171,7 +192,7 @@ p {
 
 }
 .item6:hover {
-    background-color: #FFEE93;
+    background-color: #f4bbd3;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.05);
     opacity: 0.9;
@@ -179,4 +200,85 @@ p {
 div{
     padding: 20px;
 }
+/* Pagina de contatos*/
+.contatos{
+    background: linear-gradient(0,0,0,0.1) rgb(0, 0, 0, 0.1);
+    background: url(/img/toppng.com-lego-png-497x592.png);
+    background-size: 250px;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.contatos a {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(245, 237, 237, 0.226);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+    font-size: larger;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #383B53;
+    border-left: 5px solid #1A659E;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin: 16px;
+}
+.titulo{
+    color: #F0C808;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.226);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+}
+
+.rodape{
+    margin-top: 300px;
+    padding: 16px;
+}
+a {
+    text-decoration: none;
+}
+/*Pagina de sobre*/
+.inicio {
+    padding: 12px;
+    font-weight: 600;
+}
+h2{
+    color: #F0C808;
+    text-align: left;
+    border-left: 5px solid #F0C808;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 10px;
+}
+.sobre {
+    text-align: left;
+    font-size: 16px;
+}
+
+.final{
+    margin-top: 350px;
+
+}
+.principal {
+    background: url(/img/toppng.com-lego-png-497x592.png);
+    background-size: 180px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+footer h2 {
+    font-size: 12px;
+    border-left: none;
+    text-align: center;
+
+}
+footer{
+    padding: 20px;
+
+}
+
+
+
+
 
