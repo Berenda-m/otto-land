@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
 }
+
 /*imagem perfil*/
 img {
     object-fit: cover;
@@ -13,6 +14,7 @@ img {
     border-radius: 60%;
     object-position: center 40%;
 }
+
 /* Conteúdo do topo*/
 .hero {
     background: url("../img/capa.jpg");
@@ -51,7 +53,7 @@ header {
 }
 
 nav {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     text-decoration: none;
     background-color: #cc2724e3;
 
@@ -72,6 +74,7 @@ h1 {
     color: #F0C808;
     background-color: #cc2724e3;
 }
+
 h3 {
     font-size: 12px;
     padding: 5px;
@@ -91,15 +94,16 @@ h3 {
 
 .button {
     display: inline-block;
-    padding: 5px 10px;
-    margin: 10px 30px;
+    padding: 5px 15px;
+    margin: 10px 10px;
     border-radius: 15px;
     border: 1px solid #f0c808;
     background-color: #FFF1D0;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 8px 18px;
-    margin: 10px 20px;
+    color: #f0c808;
+    background: linear-gradient(0, 0, 0, 0.5) rgba(0, 0, 0, 0.699);
+    font-weight: bold;
 }
 
 .button:hover {
@@ -115,7 +119,8 @@ footer {
     text-shadow: 1px 1px 2px rgb(3, 3, 3);
     background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: #F0C808;
     text-shadow: 1px 1px 2px rgb(3, 3, 3);
@@ -131,6 +136,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
+
 /* imagens da galeria*/
 .item {
     background-color: #f6f3ed;
@@ -143,10 +149,12 @@ p {
     height: 10%;
     object-position: center 35%;
 }
+
 .item:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
 .item img {
     width: 100%;
     height: 220px;
@@ -155,9 +163,11 @@ p {
     border-radius: 40%;
     transition: transform 0.3s ease;
 }
+
 .item:hover img {
     transform: scale(1.05);
 }
+
 .item1:hover {
     background-color: #ffee93;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -178,12 +188,14 @@ p {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
 .item4:hover {
     background-color: #E7C6FF;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.05);
     opacity: 0.9;
 }
+
 .item5:hover {
     background-color: #A0CED9;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -191,59 +203,25 @@ p {
     opacity: 0.9;
 
 }
+
 .item6:hover {
     background-color: #f4bbd3;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.05);
     opacity: 0.9;
 }
-div{
+
+div {
     padding: 20px;
 }
-/* Pagina de contatos*/
-.contatos{
-    background: linear-gradient(0,0,0,0.1) rgb(0, 0, 0, 0.1);
-    background: url(/img/toppng.com-lego-png-497x592.png);
-    background-size: 180px;
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-.contatos a {
-    text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(245, 237, 237, 0.226);
-    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
-    font-size: larger;
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #383B53;
-    border-left: 5px solid #1A659E;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    display: block;
-    text-align: left;
-    padding: 10px;
-    margin: 16px;
-}
-.titulo{
-    color: #F0C808;
-    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.226);
-    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
-}
-
-.rodape{
-    margin-top: 300px;
-    padding: 16px;
-}
-a {
-    text-decoration: none;
-}
 /*Pagina de sobre*/
 .inicio {
     padding: 12px;
     font-weight: 600;
 }
-h2{
+
+h2 {
     color: #F0C808;
     text-align: left;
     border-left: 5px solid #F0C808;
@@ -252,15 +230,17 @@ h2{
     display: block;
     margin: 10px;
 }
+
 .sobre {
     text-align: left;
     font-size: 16px;
 }
 
-.final{
+.final {
     margin-top: 350px;
 
 }
+
 .principal {
     background: url(/img/toppng.com-lego-png-497x592.png);
     background-size: 180px;
@@ -268,32 +248,67 @@ h2{
     background-repeat: no-repeat;
 
 }
+
 footer h2 {
     font-size: 12px;
     border-left: none;
     text-align: center;
 
 }
-footer{
-    padding: 20px;
 
+footer {
+    padding: 20px;
 }
-/*Pagina de contato*/
-.contatos p{
-    font-size: 0.8rem;
-    color: #383B53;
-    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.096);
+
+fieldset {
+    margin-top: 15px;
+    padding: 15px 15px;
+    width: 50%;
+    background-color: #e2e8f0;
+}
+
+input,
+select,
+textarea {
+    width: 85%;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+    margin: 10px;
+    text-align: left;
+    opacity: 70%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffee93;
+    box-shadow: 0 0 0 3px #ffee93;
+}
+
+form {
+    justify-items: center;
+}
+
+legend {
+    font-family:'Montserrat', sans-serif;
+    color: #F0C808;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.788);
     background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
 }
-.contatos header{
-    background-color: transparent;
+table{
+    border-collapse: collapse;
+    font-size: 14px;
 }
-.contatos header a{
+th, td {
+    padding: 4px 10px;
     text-align: left;
-    border-left: 0px solid #1A659E;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    display: block;
-    margin: 5px;
-    padding: 2px;
+}
+th {
+    font-weight: bold;
 }
