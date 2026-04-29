@@ -242,7 +242,7 @@ h2 {
 }
 
 .principal {
-    background: url(/img/toppng.com-lego-png-497x592.png);
+    background: url("../img/toppng.com-lego-png-497x592.png");
     background-size: 180px;
     background-position: center;
     background-repeat: no-repeat;
