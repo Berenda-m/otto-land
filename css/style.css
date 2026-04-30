@@ -264,8 +264,8 @@ fieldset {
     margin-top: 15px;
     padding: 15px 15px;
     width: 50%;
-    background-color: #e2e8f0;
-    border: #ffee93 solid 2px;
+    background-color: rgba(173, 247, 182, 0.363);
+    border: #60B2CE solid 2px;
 }
 
 input,
@@ -281,14 +281,15 @@ textarea {
     margin: 10px;
     text-align: left;
     opacity: 70%;
+    color: #60B2CE;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: #ffee93;
-    box-shadow: 0 0 0 3px #ffee93;
+    border-color: #60B2CE;
+    box-shadow: 0 0 0 3px #60B2CE;
 }
 
 form {
@@ -306,13 +307,14 @@ legend {
 table, tr, td{
     width: 50%;
     margin: 0 auto;
-    border: 2px solid #F0C808;
+    border: 2px solid #60B2CE;
     border-collapse: collapse;
     font-size: 14px;
     margin-top: 50px;
     color: #60B2CE;
     font-size: medium;
     font-weight: bold;
+    background-color: rgba(173, 247, 182, 0.363);
 }
 th, td {
     padding: 4px 10px;
@@ -323,4 +325,10 @@ th {
 }
 caption {
 margin: 10px;
+}
+label{
+    color: #60B2CE;
+    text-shadow: 1px 1px 2px rgba(129, 221, 233, 0.788);
+    background: linear-gradient(0, 0, 0, 0.5) rgba(0, 0, 0, 0.582);
+    font-weight: bold;
 }
