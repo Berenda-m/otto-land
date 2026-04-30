@@ -265,6 +265,7 @@ fieldset {
     padding: 15px 15px;
     width: 50%;
     background-color: #e2e8f0;
+    border: #ffee93 solid 2px;
 }
 
 input,
@@ -272,7 +273,7 @@ select,
 textarea {
     width: 85%;
     padding: 10px 14px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #60B2CE;
     border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
