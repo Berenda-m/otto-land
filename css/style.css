@@ -1,3 +1,44 @@
+:root {
+    /* Cores principais */
+    --cor-amarelo: #F0C808;
+    --cor-vermelho: #cc2724e3;
+    --cor-azul: #60B2CE;
+    --cor-ciano: #07a0c3;
+
+    /* Cores claras */
+    --cor-fundo: #eef4fa8a;
+    --cor-creme: #FFF1D0;
+    --cor-card: #f6f3ed;
+    --cor-branco: #f8fafa;
+
+    /* Hover dos cards */
+    --hover-item1: #ffee93;
+    --hover-item2: #ADF7B6;
+    --hover-item3: #FFC09F;
+    --hover-item4: #E7C6FF;
+    --hover-item5: #A0CED9;
+    --hover-item6: #f4bbd3;
+
+    /* Sombras */
+    --sombra-preta: rgb(3, 3, 3);
+    --sombra-cinza: rgba(48, 47, 47, 0.74);
+    --sombra-branca: rgb(230, 228, 228);
+
+    /* Transparências */
+    --preto-transparente: rgba(0, 0, 0, 0.699);
+    --preto-overlay: rgba(0, 0, 0, 0.5);
+
+    /* Bordas */
+    --borda-radius: 15px;
+    --borda-card: 30px;
+
+    /* Fontes */
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
+
+    /* Transições */
+    --transicao: all 0.3s ease;
+}
 /*Configuração padrão*/
 *,
 *::before,
@@ -211,10 +252,6 @@ p {
     opacity: 0.9;
 }
 
-div {
-    padding: 20px;
-}
-
 /*Pagina de sobre*/
 .inicio {
     padding: 12px;
@@ -237,7 +274,7 @@ h2 {
 }
 
 .final {
-    margin-top: 350px;
+    margin-top: 450px;
 
 }
 
