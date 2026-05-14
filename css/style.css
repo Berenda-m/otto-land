@@ -1,44 +1,4 @@
-:root {
-    /* Cores principais */
-    --cor-amarelo: #F0C808;
-    --cor-vermelho: #cc2724e3;
-    --cor-azul: #60B2CE;
-    --cor-ciano: #07a0c3;
 
-    /* Cores claras */
-    --cor-fundo: #eef4fa8a;
-    --cor-creme: #FFF1D0;
-    --cor-card: #f6f3ed;
-    --cor-branco: #f8fafa;
-
-    /* Hover dos cards */
-    --hover-item1: #ffee93;
-    --hover-item2: #ADF7B6;
-    --hover-item3: #FFC09F;
-    --hover-item4: #E7C6FF;
-    --hover-item5: #A0CED9;
-    --hover-item6: #f4bbd3;
-
-    /* Sombras */
-    --sombra-preta: rgb(3, 3, 3);
-    --sombra-cinza: rgba(48, 47, 47, 0.74);
-    --sombra-branca: rgb(230, 228, 228);
-
-    /* Transparências */
-    --preto-transparente: rgba(0, 0, 0, 0.699);
-    --preto-overlay: rgba(0, 0, 0, 0.5);
-
-    /* Bordas */
-    --borda-radius: 15px;
-    --borda-card: 30px;
-
-    /* Fontes */
-    --fonte-principal: 'Montserrat', sans-serif;
-    --fonte-secundaria: Arial, Helvetica, sans-serif;
-
-    /* Transições */
-    --transicao: all 0.3s ease;
-}
 /*Configuração padrão*/
 *,
 *::before,
@@ -59,6 +19,7 @@ img {
 /* Conteúdo do topo*/
 .hero {
     background: url("../img/capa.jpg");
+    opacity: 0.9;
     background-size: cover;
     height: 350px;
     display: flex;
@@ -87,6 +48,13 @@ body {
     text-align: center;
     background-color: #eef4fa8a;
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+}
+main {
+    flex: 1;
 }
 
 header {
@@ -120,7 +88,15 @@ h3 {
     font-size: 12px;
     padding: 5px;
 }
-
+/*parágrafo*/
+p {
+    text-align: center;
+    color: #07a0c3;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
 .subtitulo {
     margin-top: 25px;
     text-align: center;
@@ -132,6 +108,7 @@ h3 {
     text-shadow: 1px 1px 2px rgba(48, 47, 47, 0.74);
     background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
 }
+
 /*Botões*/
 .button {
     display: inline-block;
@@ -152,31 +129,7 @@ h3 {
     color: #60B2CE;
     transform: scale(1.1)
 }
-/*Rodapé*/
-footer {
-    background-color: #cc2724e3;
-    margin-top: 40px;
-    color: #F0C808;
-    text-shadow: 1px 1px 2px rgb(3, 3, 3);
-    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
-}
 
-footer a {
-    text-decoration: none;
-    color: #F0C808;
-    text-shadow: 1px 1px 2px rgb(3, 3, 3);
-    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
-    font-size: 16px;
-}
-/*parágrafo*/
-p {
-    text-align: center;
-    color: #07a0c3;
-    font-size: larger;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-}
 
 /* imagens da galeria*/
 .item {
@@ -274,7 +227,7 @@ h2 {
 }
 
 .final {
-    margin-top: 450px;
+    margin-top: 350px;
 
 }
 
@@ -283,24 +236,13 @@ h2 {
     background-size: 180px;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
-footer h2 {
-    font-size: 12px;
-    border-left: none;
-    text-align: center;
-
-}
-
-footer {
-    padding: 20px;
-}
 /*Formulário de contato*/
 fieldset {
     margin-top: 15px;
-    padding: 15px 15px;
-    width: 50%;
+    padding: 10px 10px;
+    width: 30%;
     background-color: rgba(173, 247, 182, 0.363);
     border: #60B2CE solid 2px;
 }
@@ -334,14 +276,17 @@ form {
 }
 
 legend {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #F0C808;
     font-size: 16px;
     text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.788);
     background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
 }
+
 /*Tabela de horarios*/
-table, tr, td{
+table,
+tr,
+td {
     width: 50%;
     margin: 0 auto;
     border: 2px solid #60B2CE;
@@ -353,19 +298,174 @@ table, tr, td{
     font-weight: bold;
     background-color: rgba(173, 247, 182, 0.363);
 }
-th, td {
+
+th,
+td {
     padding: 4px 10px;
     text-align: left;
 }
+
 th {
     font-weight: bold;
 }
+
 caption {
-margin: 10px;
+    margin: 10px;
 }
-label{
+
+label {
     color: #60B2CE;
     text-shadow: 1px 1px 2px rgba(129, 221, 233, 0.788);
     background: linear-gradient(0, 0, 0, 0.5) rgba(0, 0, 0, 0.582);
     font-weight: bold;
+}
+
+/* 5. GRADE DE CARDS */
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 40px;
+}
+
+.card {
+    flex: 1 1 200px;
+    max-width: 280px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+}
+
+.card-img {
+    margin: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section.cards {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-body h2 {
+    color: #F0C808;
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Estilização do botão "Comprar" dentro dos cards */
+.cards button {
+    margin-top: auto;
+    background-color: #F0C808;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 6. FOOTER */
+
+footer {
+    background-color: #cc2724e3;
+    color: #F0C808;
+    text-shadow: 1px 1px 2px rgb(3, 3, 3);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);    
+    padding: 48px 40px 24px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F0C808;
+    text-shadow: 1px 1px 2px rgb(3, 3, 3);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 250px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-col h3 {
+    color: white;
+    margin-bottom: 14px;
+}
+
+.footer-col a {
+    color: rgba(255, 255, 255, .6);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: .85rem;
+}
+.footer-col p {
+    color: rgba(255, 255, 255, .6);
+}
+
+footer h2 {
+    font-size: 12px;
+    border-left: none;
+    text-align: center;
+}
+
+/* Página de agradecimento */
+.titulo {
+    background-color: #cc2724e3;
+    color: #F0C808;
+    text-shadow: 1px 1px 2px rgb(3, 3, 3);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navegação a {
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+.agradecimento {
+    color: #60B2CE;
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px;
+    border-left: none;
+    text-align: center;
 }
