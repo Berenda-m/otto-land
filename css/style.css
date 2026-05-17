@@ -354,4 +354,98 @@ footer a {
     transition: transform 0.3s ease;
     margin: 30px;
 }
+/*Página de contato, Formulários e tabela de horarios*/
+
+fieldset {
+    margin-top: 15px;
+    padding: 10px 10px;
+    width: 32%;
+    background-color: var(--cor-superficie);
+    opacity: 85%;
+    border: #60B2CE solid 2px;
+}
+
+input,
+select,
+textarea {
+    width: 85%;
+    padding: 10px 14px;
+    border: 1px solid var(--cor-hover);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color .2s, box-shadow .2s;
+    margin: 10px;
+    text-align: center;
+    opacity: 70%;
+    color: var(--cor-texto);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #60B2CE;
+    box-shadow: 0 0 0 3px #60B2CE;
+}
+
+form {
+    justify-items: center;
+}
+
+legend {
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    font-size: 16px;
+    text-shadow: var(--sombra);
+    background: linear-gradient(0, 0, 0, 0.5) rgb(0, 0, 0);
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Tabela de horarios*/
+table,
+tr,
+td {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #60B2CE;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 50px;
+    color: #60B2CE;
+    font-size: medium;
+    font-weight: bold;
+    background-color: var(--cor-fundo)
+}
+
+th,
+td {
+    padding: 4px 10px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+caption {
+    margin: 10px;
+}
+
+label {
+    color: var(--cor-texto);
+    text-shadow: 1px 1px 2px rgba(129, 221, 233, 0.788);
+    background: linear-gradient(0, 0, 0, 0.5) rgba(0, 0, 0, 0.582);
+    font-weight: bold;
+}
+.campo {
+    text-align: center;
+}
+/*botões do contato*/
+.botoes {
+    display: flex;
+    background-color: none;
+    color: var(--cor-texto);
+}
 
