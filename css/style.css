@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* Conteúdo do topo*/
 .hero {
     background-repeat: no-repeat;
@@ -37,10 +38,8 @@
     font-weight: 700;
     font-family: var(--fonte);
     text-shadow: 2px 2px 4px rgb(3, 3, 3);
-background: linear-gradient(
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
-), url("../img/capa.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url("../img/capa.jpg");
 }
 
 /*Figcaption visualmente oculto, mas acessível para leitores de tela*/
@@ -52,7 +51,7 @@ figcaption {
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    white-space: nowrap;    
+    white-space: nowrap;
     border: 0;
 }
 
@@ -63,6 +62,7 @@ img {
     align-items: center;
 
 }
+
 .foto-perfil {
     width: 280px;
     height: 280px;
@@ -71,6 +71,7 @@ img {
     border: 3px solid #FFCC00;
     align-items: center;
 }
+
 /*Estilo do título principal*/
 h1 {
     font-size: 2.0rem;
@@ -80,6 +81,7 @@ h1 {
     padding: 10px 20px;
     font-weight: 550;
 }
+
 /*Estilo do corpo do site*/
 body {
     background-color: var(--cor-fundo);
@@ -87,9 +89,11 @@ body {
     font-family: var(--fonte);
     line-height: 1.6;
 }
+
 main {
     flex: 1;
 }
+
 /*Estilo do cabeçalho e navegação*/
 header {
     display: flex;
@@ -101,10 +105,12 @@ header {
     padding-bottom: 0;
     background-color: #FFCC00;
 }
+
 nav {
     padding-bottom: 0px;
     display: flex;
 }
+
 /*Estilo dos subtítulos*/
 h2 {
     font-size: 1.25rem;
@@ -114,6 +120,7 @@ h2 {
     padding: 10px 20px;
     font-weight: 550;
 }
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +128,7 @@ section {
     justify-content: center;
     padding: 20px;
 }
+
 p {
     text-align: center;
     font-size: larger;
@@ -130,6 +138,7 @@ p {
     font-size: 1.1rem;
     margin: 10px;
 }
+
 h3 {
     font-size: 1.20rem;
     padding: 5px;
@@ -158,6 +167,7 @@ h3 {
     color: var(--cor-primaria);
     transform: scale(1.1)
 }
+
 /*logo do topo*/
 .logo {
     margin-right: 10px;
@@ -168,6 +178,7 @@ h3 {
     border-radius: 0%;
     border: none;
 }
+
 /*Subtítulo da página inicial*/
 .subtitulo-index {
     display: flex;
@@ -179,6 +190,7 @@ h3 {
     font-weight: 550;
     justify-content: center;
 }
+
 /* imagens da galeria*/
 .item {
     background-color: var(--cor-superficie);
@@ -194,6 +206,7 @@ h3 {
     min-height: 420px;
     justify-content: flex-start;
 }
+
 .item p {
     margin-top: 15px;
     color: #1D3557;
@@ -217,7 +230,7 @@ h3 {
     display: block;
     border-radius: 40%;
     transition: transform 0.3s ease;
-    
+
 
 }
 
@@ -267,13 +280,13 @@ h3 {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
 /*Rodapé*/
 
 footer {
     background-color: var(--cor-secundaria);
     text-shadow: 1px 1px 2px rgb(3, 3, 3);
-    padding: 28px 24px 24px;
-    padding-left: 24px;
+    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -300,18 +313,20 @@ footer a {
 
 .footer-col h3 {
     color: white;
-    margin-bottom: 10px;
-    font-size: 1.20rem;
-    text-align: left;
-    padding-left: 15px;
-
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 .footer-col a {
     color: var(--cor-texto-claro);
-    display: block;
+    display: flex;
     margin-bottom: 8px;
-    padding-left: 15px;
+    padding-left: 5px;
+    margin: 1px auto;
+    font-size: 1.0rem;
+    align-items: center;
+
 }
 
 .footer-col a:hover {
@@ -324,21 +339,42 @@ footer a {
     text-align: center;
     font-size: .85rem;
 }
+
 .footer-col p {
     color: #FFCC00;
     text-shadow: var(--sombra);
-    text-align: center;
     padding-left: 0;
+    margin: 0;
+    font-size: 1.2rem;
 
 }
-.direitos{
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    object-fit: contain;
+    height: 60px;
+    width: 60px;
+    border: none;
+    
+    
+}
+footer i {
+    margin: 5px;
+}
+
+.direitos {
     color: #FFCC00;
     text-shadow: var(--sombra);
 
 }
 
 /*CONFIGURAÇOES PAGE SOBRE*/
-.sobre{
+.sobre {
     text-align: left;
 }
 
@@ -347,6 +383,7 @@ footer a {
     gap: 10px;
     justify-content: center;
 }
+
 .otto-fotos {
     width: 30%;
     height: 30%;
@@ -354,6 +391,7 @@ footer a {
     transition: transform 0.3s ease;
     margin: 30px;
 }
+
 /*Página de contato, Formulários e tabela de horarios*/
 
 fieldset {
@@ -437,20 +475,24 @@ label {
     text-shadow: 1px 1px 2px rgba(129, 221, 233, 0.788);
     font-weight: bold;
 }
+
 .campo {
     text-align: center;
 }
+
 /*botões do contato*/
 .botoes {
     display: flex;
     color: var(--cor-texto);
 }
+
 /*Página de agradecimento*/
 .agradecimento {
     text-align: center;
     margin-top: 20px;
 
-} 
+}
+
 /*foto do boneco*/
 .boneco {
     width: 20%;
@@ -460,11 +502,13 @@ label {
     margin: 30px;
     border: none;
 }
+
 /* Página dos produtos */
 
-.produtos{
-   font-size: 1.2rem;
+.produtos {
+    font-size: 1.2rem;
 }
+
 .grade {
     display: flex;
     flex-wrap: wrap;
