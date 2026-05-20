@@ -287,8 +287,6 @@ footer {
     background-color: var(--cor-secundaria);
     text-shadow: 1px 1px 2px rgb(3, 3, 3);
     padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
 }
 
 footer a {
@@ -300,13 +298,13 @@ footer a {
 
 .footer-grid {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     flex-wrap: wrap;
-    margin-top: 250px;
+    justify-content: center;
+    width: 100%;
 }
 
 .footer-col {
-    flex: 1;
     min-width: 150px;
     text-align: left;
 }
@@ -323,7 +321,6 @@ footer a {
     display: flex;
     margin-bottom: 8px;
     padding-left: 5px;
-    margin: 1px auto;
     font-size: 1.0rem;
     align-items: center;
 
@@ -363,8 +360,10 @@ footer a {
     
     
 }
-footer i {
-    margin: 5px;
+.icones {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
 }
 
 .direitos {
