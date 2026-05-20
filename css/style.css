@@ -287,6 +287,7 @@ footer {
     background-color: var(--cor-secundaria);
     text-shadow: 1px 1px 2px rgb(3, 3, 3);
     padding: 40px 20px;
+    margin-top: 40px;
 }
 
 footer a {
@@ -298,29 +299,30 @@ footer a {
 
 .footer-grid {
     display: flex;
-    gap: 60px;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .footer-col {
-    min-width: 150px;
+    min-width: 160px;
     text-align: left;
 }
 
 .footer-col h3 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .footer-col a {
     color: var(--cor-texto-claro);
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     padding-left: 5px;
-    font-size: 1.0rem;
+    font-size: 0.80rem;
 }
 
 .footer-col a:hover {
@@ -328,17 +330,19 @@ footer a {
 }
 
 .footer-bottom {
-    border-top: 2px solid rgba(255, 255, 255, .1);
-    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 8px;
+    margin-top: 20px;
     text-align: center;
     font-size: .85rem;
+    width: 100%;
 }
 
 .footer-col p {
     color: #FFCC00;
     text-shadow: var(--sombra);
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 
 }
 .footer-logo {
@@ -359,13 +363,14 @@ footer a {
     margin-top: 10px;
 }
 .icones a{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .direitos {
     color: #FFCC00;
     text-shadow: var(--sombra);
-
+    padding: 0px;
+    margin: 0px;
 }
 
 /*CONFIGURAÇOES PAGE SOBRE*/
